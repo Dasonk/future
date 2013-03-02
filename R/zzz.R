@@ -7,25 +7,24 @@
                      minor, 
                      "\nTo get the most out of future please install:",
                      sep = "")
+    
+    loadAndMessage <- function(package){
+        inst <- suppressWarnings(require(package, character.only=TRUE, quietly=TRUE))
+        if(!inst){
+            message <<- c(message, package)
+        }
+    }
+    
     if(major == 2){
         if(minor < 14){
-            inst <- suppressWarnings(require(future2.14, quietly = TRUE))
-            if(!inst){
-                message <- c(message, "future2.14")
-            }
+            loadAndMessage("future2.14")
         }
         if(minor < 15){
-            inst <- suppressWarnings(require(future2.15, quietly = TRUE))
-            if(!inst){
-                message <- c(message, "future2.15")
-            }
+            loadAndMessage("future2.15")
         }
         
         # Need 3.0
-        inst <- suppressWarnings(require(future3.0, quietly = TRUE))
-        if(!inst){
-            message <- c(message, "future3.0")
-        }
+        loadAndMessage("future3.0")
     }
     # If major = 3.0 then they're on developmental version... 
     # no worries about that for now...
