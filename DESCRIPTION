@@ -18,7 +18,7 @@ Description: This is a convenience package for those stuck with R
     reason or another... this might help you out.  This package
     is only a convenience to load the corresponding future packages
     that are necessary to bring your version of R more up to date.
-License: GPL-2
+License: GPL-3
 Collate:
     'zzz.R'
     'installFuture.R'
