@@ -7,7 +7,7 @@
 #' @param github logical; Do you want to install the developmental
 #' versions from the github repositories? (requires the devtools package)
 #' @export
-installFuture <- function(github = FALSE, ...){
+installFuture <- function(github = TRUE, ...){
     major <- as.numeric(sessionInfo()$R.version$major)
     minor <- as.numeric(sessionInfo()$R.version$minor)
     
