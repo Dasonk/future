@@ -1,7 +1,7 @@
 future
 ==========
 
-The `future` package is a convenience package meant to load the necessary other futureXXX packages.  These other packages essentially provide the best approximations to the functions introduced in specific versions of R so that users stuck with older versions of R can still have access to some of these nicer functions.
+The `future` package is a convenience package meant to load the necessary other futureX.Y packages.  These other packages essentially provide the best approximations to the functions introduced in specific versions of R so that users stuck with older versions of R can still have access to some of these nicer functions.
     
 ## Installation
 
