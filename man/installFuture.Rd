@@ -2,7 +2,7 @@
 \alias{installFuture}
 \title{Install future pacakges}
 \usage{
-  installFuture(..., github = FALSE)
+  installFuture(github = FALSE, ...)
 }
 \arguments{
   \item{...}{Parameters to pass onto install.packages}
