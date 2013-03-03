@@ -21,7 +21,7 @@ installFuture <- function(github = TRUE, ...){
     }
     
     checkAndInstall <- function(package){
-        if(!require(package, character.only = TRUE, quietly = TRUE)){
+        if(!suppressWarnings(require(package, character.only = TRUE, quietly = TRUE))){
             installfun(package, ...)
         }
     }
